@@ -6,6 +6,9 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+deno.lock
+bun.lockb
+
 
 node_modules
 dist
