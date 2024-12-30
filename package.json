@@ -3,6 +3,7 @@
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
+	"homepage": "https://d7mandev.github.io/react-job/",
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
