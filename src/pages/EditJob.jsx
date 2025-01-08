@@ -36,18 +36,18 @@ const EditJob = ({ updatedjobclick }) => {
 		return navigate(`/jobs/${id}`);
 	};
 	return (
-		<section className='bg-indigo-50'>
+		<section className='bg-indigo-50 dark:bg-black '>
 			<div className='container m-auto max-w-2xl py-24'>
-				<div className='bg-white px-6 py-8 mb-4 shadow-md rounded-md border m-4 md:m-0'>
+				<div className='dark:bg-black dark:border-2 dark:border-white bg-white px-6 py-8 mb-4 shadow-md rounded-md border m-4 md:m-0'>
 					<form onSubmit={onSubmit}>
-						<h2 className='text-3xl text-center font-semibold mb-6'>
+						<h2 className='text-3xl text-center font-semibold mb-6 text-indigo-500'>
 							update Job
 						</h2>
 
 						<div className='mb-4'>
 							<label
 								htmlFor='type'
-								className='block text-gray-700 font-bold mb-2'
+								className='block text-gray-700 font-bold mb-2 dark:text-white'
 							>
 								Job Type
 							</label>
@@ -67,7 +67,7 @@ const EditJob = ({ updatedjobclick }) => {
 						</div>
 
 						<div className='mb-4'>
-							<label className='block text-gray-700 font-bold mb-2'>
+							<label className='block text-gray-700 font-bold mb-2 dark:text-white'>
 								Job Listing Name
 							</label>
 							<input
@@ -84,7 +84,7 @@ const EditJob = ({ updatedjobclick }) => {
 						<div className='mb-4'>
 							<label
 								htmlFor='description'
-								className='block text-gray-700 font-bold mb-2'
+								className='block text-gray-700 font-bold mb-2 dark:text-white'
 							>
 								Description
 							</label>
@@ -103,7 +103,7 @@ const EditJob = ({ updatedjobclick }) => {
 						<div className='mb-4'>
 							<label
 								htmlFor='type'
-								className='block text-gray-700 font-bold mb-2'
+								className='block text-gray-700 font-bold mb-2 dark:text-white'
 							>
 								Salary
 							</label>
@@ -140,7 +140,7 @@ const EditJob = ({ updatedjobclick }) => {
 						</div>
 
 						<div className='mb-4'>
-							<label className='block text-gray-700 font-bold mb-2'>
+							<label className='block text-gray-700 font-bold mb-2 dark:text-white'>
 								Location
 							</label>
 							<input
@@ -155,12 +155,14 @@ const EditJob = ({ updatedjobclick }) => {
 							/>
 						</div>
 
-						<h3 className='text-2xl mb-5'>Company Info</h3>
+						<h3 className='text-2xl mb-5 dark:text-indigo-500'>
+							Company Info
+						</h3>
 
 						<div className='mb-4'>
 							<label
 								htmlFor='company'
-								className='block text-gray-700 font-bold mb-2'
+								className='block text-gray-700 font-bold mb-2 dark:text-white'
 							>
 								Company Name
 							</label>
@@ -178,7 +180,7 @@ const EditJob = ({ updatedjobclick }) => {
 						<div className='mb-4'>
 							<label
 								htmlFor='company_description'
-								className='block text-gray-700 font-bold mb-2'
+								className='block text-gray-700 font-bold mb-2 dark:text-white'
 							>
 								Company Description
 							</label>
@@ -198,7 +200,7 @@ const EditJob = ({ updatedjobclick }) => {
 						<div className='mb-4'>
 							<label
 								htmlFor='contact_email'
-								className='block text-gray-700 font-bold mb-2'
+								className='block text-gray-700 font-bold mb-2 dark:text-white'
 							>
 								Contact Email
 							</label>
@@ -217,7 +219,7 @@ const EditJob = ({ updatedjobclick }) => {
 						<div className='mb-4'>
 							<label
 								htmlFor='contact_phone'
-								className='block text-gray-700 font-bold mb-2'
+								className='block text-gray-700 font-bold mb-2 dark:text-white'
 							>
 								Contact Phone
 							</label>

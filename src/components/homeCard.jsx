@@ -4,10 +4,10 @@ import Card from './card.jsx';
 function HomeCards() {
 	return (
 		<>
-			<section className='py-4'>
+			<section className='dark:bg-black py-4'>
 				<div className='container-xl lg:container m-auto'>
 					<div className='grid grid-cols-1 md:grid-cols-2 gap-4 p-4 rounded-lg'>
-						<Card bg='bg-black'>
+						<Card bg='bg-black dark:border-2 dark:border-white'>
 							<h2 className='text-2xl font-bold text-white'>
 								For Developers
 							</h2>

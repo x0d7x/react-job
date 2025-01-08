@@ -31,18 +31,18 @@ const Addjob = ({ addJobSumbit }) => {
 		return navigate('/jobs');
 	};
 	return (
-		<section className='bg-indigo-50'>
+		<section className='bg-indigo-50 dark:bg-black '>
 			<div className='container m-auto max-w-2xl py-24'>
-				<div className='bg-white px-6 py-8 mb-4 shadow-md rounded-md border m-4 md:m-0'>
+				<div className='bg-white px-6 py-8 mb-4 shadow-md rounded-md border m-4 md:m-0 dark:bg-black dark:border-2 dark:border-white'>
 					<form onSubmit={onSubmit}>
-						<h2 className='text-3xl text-center font-semibold mb-6'>
+						<h2 className='text-3xl text-center font-semibold mb-6 text-indigo-500'>
 							Add Job
 						</h2>
 
 						<div className='mb-4'>
 							<label
 								htmlFor='type'
-								className='block text-gray-700 font-bold mb-2'
+								className='block text-gray-700 font-bold mb-2 dark:text-white'
 							>
 								Job Type
 							</label>
@@ -62,7 +62,7 @@ const Addjob = ({ addJobSumbit }) => {
 						</div>
 
 						<div className='mb-4'>
-							<label className='block text-gray-700 font-bold mb-2'>
+							<label className='block text-gray-700 font-bold mb-2 dark:text-white'>
 								Job Listing Name
 							</label>
 							<input
@@ -79,7 +79,7 @@ const Addjob = ({ addJobSumbit }) => {
 						<div className='mb-4'>
 							<label
 								htmlFor='description'
-								className='block text-gray-700 font-bold mb-2'
+								className='block text-gray-700 font-bold mb-2 dark:text-white'
 							>
 								Description
 							</label>
@@ -98,7 +98,7 @@ const Addjob = ({ addJobSumbit }) => {
 						<div className='mb-4'>
 							<label
 								htmlFor='type'
-								className='block text-gray-700 font-bold mb-2'
+								className='block text-gray-700 font-bold mb-2 dark:text-white'
 							>
 								Salary
 							</label>
@@ -135,7 +135,7 @@ const Addjob = ({ addJobSumbit }) => {
 						</div>
 
 						<div className='mb-4'>
-							<label className='block text-gray-700 font-bold mb-2'>
+							<label className='block text-gray-700 font-bold mb-2 dark:text-white'>
 								Location
 							</label>
 							<input
@@ -150,12 +150,14 @@ const Addjob = ({ addJobSumbit }) => {
 							/>
 						</div>
 
-						<h3 className='text-2xl mb-5'>Company Info</h3>
+						<h3 className='text-2xl mb-5 dark:text-indigo-500'>
+							Company Info
+						</h3>
 
 						<div className='mb-4'>
 							<label
 								htmlFor='company'
-								className='block text-gray-700 font-bold mb-2'
+								className='block text-gray-700 font-bold mb-2 dark:text-white'
 							>
 								Company Name
 							</label>
@@ -173,7 +175,7 @@ const Addjob = ({ addJobSumbit }) => {
 						<div className='mb-4'>
 							<label
 								htmlFor='company_description'
-								className='block text-gray-700 font-bold mb-2'
+								className='block text-gray-700 font-bold mb-2 dark:text-white'
 							>
 								Company Description
 							</label>
@@ -193,7 +195,7 @@ const Addjob = ({ addJobSumbit }) => {
 						<div className='mb-4'>
 							<label
 								htmlFor='contact_email'
-								className='block text-gray-700 font-bold mb-2'
+								className='block text-gray-700 font-bold mb-2 dark:text-white'
 							>
 								Contact Email
 							</label>
@@ -212,7 +214,7 @@ const Addjob = ({ addJobSumbit }) => {
 						<div className='mb-4'>
 							<label
 								htmlFor='contact_phone'
-								className='block text-gray-700 font-bold mb-2'
+								className='block text-gray-700 font-bold mb-2 dark:text-white'
 							>
 								Contact Phone
 							</label>

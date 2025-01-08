@@ -9,14 +9,16 @@ const Jobcard = ({ job }) => {
 		desc = desc.substring(0, 100) + '...';
 	}
 	return (
-		<div className='bg-white rounded-xl shadow-md relative'>
+		<div className='dark:bg-black dark:border-2 dark:border-white bg-white rounded-xl shadow-md relative'>
 			<div className='p-4'>
 				<div className='mb-6'>
 					<div className='text-gray-600 my-2'>{job.type}</div>
-					<h3 className='text-xl font-bold'>{job.title}</h3>
+					<h3 className='dark:text-white text-xl font-bold'>
+						{job.title}
+					</h3>
 				</div>
 
-				<div className='mb-5'>
+				<div className='mb-5 dark:text-white'>
 					{desc}
 					<button
 						onClick={() => setFullDesc((prev) => !prev)}

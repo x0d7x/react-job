@@ -14,7 +14,7 @@ const JobPage = ({ deleteJob }) => {
 	};
 	return (
 		<>
-			<section>
+			<section className='dark:bg-black'>
 				<div className='container m-auto py-6 px-6'>
 					<Link
 						to='/jobs'
@@ -24,15 +24,15 @@ const JobPage = ({ deleteJob }) => {
 					</Link>
 				</div>
 			</section>
-			<section className='bg-indigo-50'>
+			<section className='bg-indigo-50 dark:bg-black'>
 				<div className='container m-auto py-10 px-6'>
 					<div className='grid grid-cols-1 md:grid-cols-70/30 w-full gap-6'>
 						<main>
-							<div className='bg-white p-6 rounded-lg shadow-md text-center md:text-left'>
+							<div className='dark:bg-black dark:border-2 dark:border-white bg-white p-6 rounded-lg shadow-md text-center md:text-left'>
 								<div className='text-gray-500 mb-4'>
 									{job.type}
 								</div>
-								<h1 className='text-3xl font-bold mb-4'>
+								<h1 className='text-3xl font-bold mb-4 dark:text-white'>
 									{job?.title}
 								</h1>
 								<div className='text-gray-500 mb-4 flex align-middle justify-center md:justify-start'>
@@ -43,14 +43,14 @@ const JobPage = ({ deleteJob }) => {
 								</div>
 							</div>
 
-							<div className='bg-white p-6 rounded-lg shadow-md mt-6'>
-								<h3 className='text-indigo-800 text-lg font-bold mb-6'>
+							<div className='dark:bg-black dark:border-2 dark:border-white dark:text-white bg-white p-6 rounded-lg shadow-md mt-6'>
+								<h3 className='text-indigo-500 text-lg font-bold mb-6'>
 									Job Description
 								</h3>
 
 								<p className='mb-4'>{job.description}</p>
 
-								<h3 className='text-indigo-800 text-lg font-bold mb-2'>
+								<h3 className='text-indigo-500 text-lg font-bold mb-2'>
 									Salary
 								</h3>
 
@@ -59,33 +59,39 @@ const JobPage = ({ deleteJob }) => {
 						</main>
 
 						<aside>
-							<div className='bg-white p-6 rounded-lg shadow-md'>
-								<h3 className='text-xl font-bold mb-6'>
+							<div className='bg-white p-6 dark:bg-black dark:border-2 dark:border-white rounded-lg shadow-md'>
+								<h3 className='text-xl font-bold mb-6 dark:text-indigo-500'>
 									Company Info
 								</h3>
 
-								<h2 className='text-2xl'>{job.company.name}</h2>
+								<h2 className='text-2xl dark:text-indigo-400'>
+									{job.company.name}
+								</h2>
 
-								<p className='my-2'>
+								<p className='my-2 dark:text-white'>
 									{job.company.description}
 								</p>
 
 								<hr className='my-4' />
 
-								<h3 className='text-xl'>Contact Email:</h3>
+								<h3 className='text-xl dark:text-indigo-400'>
+									Contact Email:
+								</h3>
 
 								<p className='my-2 bg-indigo-100 p-2 font-bold'>
 									{job.company.contactEmail}
 								</p>
 
-								<h3 className='text-xl'>Contact Phone:</h3>
+								<h3 className='text-xl dark:text-indigo-400'>
+									Contact Phone:
+								</h3>
 
 								<p className='my-2 bg-indigo-100 p-2 font-bold'>
 									{job.company.contactPhone}
 								</p>
 							</div>
 
-							<div className='bg-white p-6 rounded-lg shadow-md mt-6'>
+							<div className='bg-white p-6 rounded-lg shadow-md mt-6 dark:text-indigo-400 dark:bg-black dark:border-2 dark:border-white'>
 								<h3 className='text-xl font-bold mb-6'>
 									Manage Job
 								</h3>

@@ -1,10 +1,6 @@
 ## job site with React
 
-
-
-
 https://github.com/user-attachments/assets/30dbd008-5a43-4cd2-afba-24d1a4d88886
-
 
 Feature ⭐ :
 
@@ -22,7 +18,7 @@ Feature ⭐ :
 **to-do**
 
 - [ ] add login
-- [ ] add dark theme
+- [-] add dark theme
 
 #### how to make add and delete works locally 👇 ?
 
