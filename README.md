@@ -18,7 +18,7 @@ Feature ⭐ :
 **to-do**
 
 - [ ] add login
-- [-] add dark theme
+- [ ✅ ] add dark theme
 
 #### how to make add and delete works locally 👇 ?
 
