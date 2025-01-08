@@ -16,7 +16,7 @@ const DarkBtn = () => {
 	return (
 		<button
 			onClick={toggleDark}
-			className='dark:border-indigo-700 px-2 py-2 border-2 border-indigo-300 rounded-full text-white'
+			className='motion-opacity-in-0 motion-translate-y-in-25 motion-blur-in-md  hover:motion-preset-confetti dark:border-indigo-700 px-2 py-2 border-2 border-indigo-300 rounded-full text-white'
 		>
 			{darkMode === 'dark' ? 'Light' : 'Dark'} Mode 🌙
 		</button>

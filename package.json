@@ -36,6 +36,7 @@
 		"globals": "^15.12.0",
 		"json-server": "1.0.0-beta.3",
 		"postcss": "^8.4.49",
-		"tailwindcss": "^3.4.16"
+		"tailwindcss": "^3.4.16",
+		"tailwindcss-motion": "^1.0.1"
 	}
 }

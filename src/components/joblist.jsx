@@ -30,7 +30,7 @@ const Joblist = ({ isHome = false }) => {
 				</h2>
 				{loading ? <Spiner loding={loading} /> : (
 					<>
-						<div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
+						<div className='motion-opacity-in-0 motion-translate-y-in-25 motion-ease-in grid grid-cols-1 md:grid-cols-3 gap-6'>
 							{jobs.map((job) => (
 								<Jobcard key={job?.id} job={job} />
 							))}
