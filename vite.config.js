@@ -5,7 +5,6 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   // base: '/react-job',
-  homepage: "https://x0d7x.github.io/react-job/",
   server: {
     port: 3000,
     proxy: {
