@@ -25,7 +25,7 @@ Feature ⭐ :
 - download the project
 
 ```bash
-git clone https://github.com/d7manDev/react-job
+git clone https://github.com/x0d7x/react-job.git
 ```
 
 - download json server
