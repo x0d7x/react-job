@@ -23,13 +23,5 @@ jobs:
     permissions:
       pages: write
       id-token: write
-      environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-  steps:
-    - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v4
-    - name: Add URL to Job Summary
-      run: echo "🔗 **Live URL:** ${{ steps.deployment.outputs.page_url }}" >> $GITHUB_STEP_SUMMARY
+    steps:
+      - uses: actions/deploy-pages@v4
