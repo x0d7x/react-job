@@ -12,8 +12,8 @@ jobs:
           node-version: 20
       - run: npm install
       - run: npm run build
-      - env:
-        VITE_BACKEND: ${{ secrets.VITE_BACKEND }}
+        env:
+          VITE_BACKEND: ${{ secrets.VITE_BACKEND }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
