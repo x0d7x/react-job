@@ -9,8 +9,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "server": "json-server --watch src/jobs.json --port 4000 ",
-    "predeploy": "bun run build"
+    "server": "json-server --watch src/jobs.json --port 4000 "
   },
   "dependencies": {
     "dotenv": "^16.4.7",
